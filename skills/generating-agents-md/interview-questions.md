@@ -45,6 +45,16 @@
 - "What types/concepts are commonly confused?"
 - "What assumptions do people make that turn out to be wrong?"
 
+## Agent Behavior Guidelines (REQUIRED)
+Ask the human to choose a guardrail level:
+
+> "What level of agent guardrails do you want for this codebase?"
+> - **Minimal** (Level 1): Personal/prototype projects, high trust in agent
+> - **Standard** (Level 2): Team projects, production code, moderate guardrails
+> - **Strict** (Level 3): Critical systems, compliance requirements, explicit authorization needed
+
+Then copy the appropriate template from @behavior-levels.md into the AGENTS.md file.
+
 ---
 
 ## Auto-Generate vs Ask
@@ -60,5 +70,6 @@
 | Related Repos | Find from imports | Runtime relationships |
 | Gotchas & Tribal Knowledge | **Never** | **Always ask** |
 | Common Mistakes | **Never** | **Always ask** |
+| Agent Behavior Guidelines | Use level template | **Ask which level** |
 
 **Rule**: If a section could be derived from reading code, it has low value. Prioritize interview time on Gotchas and Common Mistakes.

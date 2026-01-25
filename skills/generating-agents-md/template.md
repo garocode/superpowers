@@ -55,6 +55,11 @@ Copy and fill out this template for your repository.
 
 - Don't confuse `UserProfile` with `User`
 - Timestamps are Unix ms, not ISO strings
+
+## Agent Guidelines
+
+<!-- Choose a level from behavior-levels.md and paste here -->
+<!-- Level 1: Minimal | Level 2: Standard | Level 3: Strict -->
 ```
 
 ## Section Guidelines
@@ -70,3 +75,4 @@ Copy and fill out this template for your repository.
 | Related Repos | Cross-repo navigation | Human experience |
 | Gotchas & Tribal Knowledge | **Highest value** | **Human only** |
 | Common Mistakes | Prevent repeated errors | **Human only** |
+| Agent Guidelines | Behavior guardrails | Human choice (level 1-3) |

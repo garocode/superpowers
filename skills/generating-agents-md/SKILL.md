@@ -32,6 +32,8 @@ Auto-generated docs that restate code are useless—agents can read code themsel
 
 **Interview questions**: See @interview-questions.md for questions to ask humans for each section.
 
+**Behavior levels**: See @behavior-levels.md for agent guardrail templates (Minimal/Standard/Strict).
+
 ## Key Sections
 
 | Section | Value Source |
@@ -40,6 +42,7 @@ Auto-generated docs that restate code are useless—agents can read code themsel
 | Directory Map, Key Files | Code + human context |
 | Gotchas & Tribal Knowledge | **Human only - highest value** |
 | Common Mistakes | **Human only** |
+| Agent Guidelines | Human choice (level 1-3) |
 
 ## Monorepo Handling
 
