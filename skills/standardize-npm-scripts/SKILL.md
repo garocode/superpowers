@@ -1,6 +1,6 @@
 ---
 name: standardize-npm-scripts
-description: Use when working with monorepos or multi-repo folders with inconsistent npm script names, or when onboarding to unfamiliar JS/TS projects with non-standard scripts
+description: Use when reviewing, auditing, or standardizing npm scripts across packages, or when onboarding to JS/TS projects with unfamiliar or inconsistent script naming
 ---
 
 # Standardize npm Scripts
