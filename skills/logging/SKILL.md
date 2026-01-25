@@ -1,6 +1,6 @@
 ---
 name: logging
-description: Use when adding logging to code, and project lacks explicit logging guidelines in CLAUDE.md or AGENTS.md
+description: Use when adding, reviewing, or improving logging in code, and project lacks explicit logging guidelines in CLAUDE.md or AGENTS.md
 ---
 
 # Logging Standards

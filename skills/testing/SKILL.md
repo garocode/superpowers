@@ -1,6 +1,6 @@
 ---
 name: testing
-description: Use when adding tests or reviewing testing strategy, and project lacks explicit testing guidelines in CLAUDE.md or AGENTS.md
+description: Use when adding, reviewing, or improving tests, and project lacks explicit testing guidelines in CLAUDE.md or AGENTS.md
 ---
 
 # Testing Strategy
