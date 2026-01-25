@@ -79,3 +79,23 @@ async function processItem(item: Item, ctx: LogContext) {
   log.debug('Processing item', { itemId: item.id });
 }
 ```
+
+## Console Logging (No Logger Utility)
+
+When the project has no structured logger, use console methods with context objects:
+
+```typescript
+// ✅ GOOD: Message + context object
+console.info('Processing request', { requestId, userId, path });
+console.error('Operation failed', { error, sessionId, attempt });
+
+// ❌ BAD: String concatenation
+console.log('Processing request ' + requestId + ' for user ' + userId);
+console.log(`Processing request ${requestId} for user ${userId}`);
+```
+
+**Why objects over concatenation:**
+- Structured output in most runtimes (Node, browsers, cloud logging)
+- Context fields stay separate and searchable
+- No formatting mistakes or missing spaces
+- Easy to add/remove fields
