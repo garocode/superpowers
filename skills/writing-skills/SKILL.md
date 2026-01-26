@@ -58,6 +58,24 @@ The entire skill creation process follows RED-GREEN-REFACTOR.
 - Project-specific conventions (put in CLAUDE.md)
 - Mechanical constraints (if it's enforceable with regex/validation, automate it—save documentation for judgment calls)
 
+## Skill Scope: Local vs User
+
+**Before creating any skill, ask the user where the skill should live:**
+
+| Scope | Location | Use When |
+|-------|----------|----------|
+| **Local** | Project's `.claude/skills/` or similar | Project-specific patterns, team conventions, repo-specific workflows |
+| **User** | `~/.claude/skills/` (Claude Code), `~/.codex/skills/` (Codex) | Personal techniques, cross-project patterns, reusable across all work |
+
+**Always ask unless the user specifies:**
+> "Should this skill be local (project-specific) or in your user scope (available across all projects)?"
+
+**Guidance for user if they're unsure:**
+- Will others on this project need it? → Local
+- Will YOU need it on other projects? → User
+- Is it a team convention? → Local
+- Is it a personal workflow? → User
+
 ## Skill Types
 
 ### Technique
@@ -596,6 +614,9 @@ Deploying untested skills = deploying untested code. It's a violation of quality
 ## Skill Creation Checklist (TDD Adapted)
 
 **IMPORTANT: Use TodoWrite to create todos for EACH checklist item below.**
+
+**Before Starting:**
+- [ ] Ask user: Local (project) or User scope? (unless already specified)
 
 **RED Phase - Write Failing Test:**
 - [ ] Create pressure scenarios (3+ combined pressures for discipline skills)
