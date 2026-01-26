@@ -1,6 +1,6 @@
 ---
 name: test-driven-development
-description: Use when implementing any feature or bugfix, before writing implementation code
+description: Use when the user explicitly requests TDD or strict test-first discipline before implementation
 ---
 
 # Test-Driven Development (TDD)
@@ -15,7 +15,9 @@ Write the test first. Watch it fail. Write minimal code to pass.
 
 ## When to Use
 
-**Always:**
+Use when the user explicitly requests TDD or strict test-first workflow.
+
+**When invoked, always apply to:**
 - New features
 - Bug fixes
 - Refactoring
